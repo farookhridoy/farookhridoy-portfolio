@@ -160,6 +160,15 @@ Notes:
 - GitHub Pages under a subpath (for example `username.github.io/repo-name`) requires `basePath`/asset-path changes because current URLs are absolute.
 - Tracked `public/robots.txt` and `public/sitemap.xml` may be refreshed by `postbuild`; the canonical static-export versions are generated into `out/`.
 
+## Contributing
+
+`main` is protected: direct pushes are blocked for everyone, including admins. All changes must come through a pull request, and the maintainer merges the PRs.
+
+1. Fork the repository and create a feature branch.
+2. Make your changes and verify them with `npx tsc --noEmit` and `npx eslint .`.
+3. Open a pull request against `main` with a short description of the change.
+4. The maintainer reviews and merges the PR.
+
 ## Further reading
 
 - [`AGENTS.md`](./AGENTS.md) — development playbooks, conventions and gotchas
